@@ -1,10 +1,14 @@
 import { headerLogo } from '../assets/images'
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
+import { motion } from 'framer-motion';
 
 const Nav = () => {
     return (
-        <header className='padding-x py-8 absolute z-10 w-full'>
+        <motion.header className='padding-x py-8 absolute z-10 w-full'
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:1, duration:1.5}}>
             <nav className='flex justify-between items-center max-container'>
                 <a href="/">
                     <img src={headerLogo} alt="Logo" width={130} height={29} />
@@ -20,7 +24,7 @@ const Nav = () => {
                     <img src={hamburger} alt="Hamburger" width={25} height={25} />
                 </div>
             </nav>
-        </header>
+        </motion.header>
     )
 }
 
