@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
         <div className="flex flex-1 justify-start items-center font-montserrat gap-2 cursor-pointer">
                   <img src={copyrightSign} alt="Copyright" height={20} width={20} className="rounded-full m-0" />
-                  <p>Copyrigth. All rights reserved.</p>
+                  <p>Copyright. All rights reserved.</p>
         </div>
         <p className="font-montserrat cursor-pointer">Terms and Conditions</p>
       </div>
